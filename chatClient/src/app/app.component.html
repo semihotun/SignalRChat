@@ -1,0 +1,61 @@
+<div id="showConnectionId" style="color: chocolate;" class="row justify-content-center">
+
+</div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="text" id="txtRoomName" class="form-control form-control-lg disabled" placeholder="Oda adı.">
+                <br>
+                <button id="btnCreateRoom" type="button" class="btn btn-info rightButton disabled">Oda Oluştur</button>
+                <br>
+                <hr>
+                <select size="5" style="width: 100%;" id="selectedRooms" class="form-select disabled " multiple>
+                <option selected value="Tümü">Odalar</option>
+                </select>
+                <br>
+                <button type="button" id="btnJoinGroup" class="btn btn-primary rightButton disabled">Seçili Odalara Gir</button>
+                <!-- ODALAR -->
+                <br> <br> <br>
+
+                <!-- Clientlar -->
+
+                <div class="list-group" id="clients">
+                    <a class="list-group-item list-group-item-action users active">Tümü</a>
+                    <div id="_clients"></div>
+
+                </div>
+                <!-- Clientlar -->
+            </div>
+            <div class="col-md-6">
+                <!-- Mesajlaşma -->
+                <div class="alert alert-success" id="clientDurum" style="display: none;">
+
+                </div>
+
+                <textarea name="" id="txtMessage" cols="30" rows="3" class="form-control" style="margin-top: 5px;" placeholder="İletilecek mesajı buraya giriniz."></textarea>
+                <button type="button" class="btn btn-light rightButton " id="btnGroupSend">Gruba Gönder</button>
+                <button type="button" class="btn btn-light rightButton " id="btnSend">Gönder</button>
+
+                <br> <br> <br>
+
+                <div class="list-group" id="mesajlar">
+                    <a href="" class="list-group-item list-group-item-action mesaj" aria-current="true">
+                        <div class="d-flex w-100 justify-context-between">
+                            <h5 class="mb-1"></h5>
+                            <h5 class="mb-2"></h5>
+                        </div>
+                        <p class="mb-1"> </p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <input class="form-control form-control-lg" type="text" placeholder="Adınız/Nick" id="txtNickName">
+                <button type="button" class="btn btn-success leftButton" id="btnLogin">Giriş Yap</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
